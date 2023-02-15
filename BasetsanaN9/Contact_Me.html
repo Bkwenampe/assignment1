@@ -3,8 +3,11 @@
 <title>Contact Me</title>
 <body>
  
-    <head>
-        <div>
+    <head> 
+        <head>
+            <link rel="stylesheet" href="Style.css">
+        </head>
+        
              <table style="width: 100%;">
                 <tr>
                     <td>
@@ -27,47 +30,42 @@
                     </nav>
                 </td>
             </tr>
-        </table></div>
+        </table>
        
     </head>
 
 
-   <main style="height: 100vh; background-color: greenyellow;">
+   <main style="height: 100vh;">
     <h1>Contact Me</h1>
+    <h1>Physical Address:</h1>
+    <p>26A College Road<br>
+        Homestead<br>
+        Kimberley<br>
+        8301<br>
+    </p>
+
     <h2>
-        Hi! I'd like to hear from you or maybe you could share some of your parenting experiences. Contact me on:
+        Hi! I'd like to hear from you or maybe you could share some of your parenting experiences. Contact me:
     </h2>
-</td>
-</tr>
-<tr>
-    <td style="padding-left: 70vh;"> 
-        <img 
-        src="Assets/Icons/FB icon.jpg"
-        alt=""
-        width="40px"
-        height="40px"
-        style="border-radius: 50%; object-fit: cover;">
-        <h6>www.facebook.com/lalabee.kwenampe</h6>
-        
-        <tr>
-            <td style="padding-left: 70vh;">
-                <img src="Assets/Icons/Insta icon.jpg"
-                alt=""
-                width="40px"
-                height="40px" style="border-radius: 50%; object-fit: cover;">
-                <h6>www.instagram.com/basetsanaxbinkie</h6>
-            </td>
-        </tr>
-        <tr>
-            <td style="padding-left: 70vh;">
-            <img src="Assets/Icons/Email icon.png"
-            alt=""
-            width="40px"
-            height="40px"
-            style="border-radius: 50%;object-fit: cover;">
-            <h6>bkwenampe67@gmail.com</h6>
-        </td>
-        </tr>
+
+    <div class="container">
+        <form action="action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="Message">Message</label>
+            <textarea id="Message" name="Message" placeholder="Message.."
+            style="height: 250px"></textarea>
+
+            <input type="submit" value="Submit">
+
+
+        </form>
+    </div>
+
    </main>
 
 
